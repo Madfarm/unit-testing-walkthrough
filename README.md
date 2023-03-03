@@ -1,4 +1,4 @@
-# unit-testing-walkthrough
+# Unit-Testing-Walkthrough
 
 
 ## Automatic and Manual testing
@@ -34,3 +34,28 @@
 ## npm install jest
 - adds jest to a repo
 - .gitignore file will tell git not to push the listed the files and dirs
+
+
+## Making the test file requires .test.js as the ender
+- All test cases will go in this file
+- when using mulitple js files we need to export some functionalities
+- We must module.exports for this - an object
+    - module.exports = {
+
+    }
+
+    - This allows us to access the stuff in the code blocks throughout our file structure
+
+- To access it in a given file we must import it
+    - syntax: const modules = require('file name here');
+
+## Setting up the test script in package.json
+- "scripts": {
+    "test": "jest"
+  }
+
+## Running the tests
+- npm test => in the terminal
+
+## Misc
+- typeof inside the expects argument can helpful for checking for common data types
