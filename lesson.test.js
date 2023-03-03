@@ -20,3 +20,5 @@ test("Should return true when pased a positive num", () => {
     expect(isPositive(-1)).toBe(false);
     expect(isPositive(0)).toBe(true);
 })
+
+///testing some git config stuff
